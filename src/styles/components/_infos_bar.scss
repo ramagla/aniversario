@@ -1,0 +1,89 @@
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.event-content {
+    width: 50%;
+    text-align: center;
+}
+
+.event-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.event-image {
+    width: 40%;
+}
+
+
+@media (max-width: 1024px) {    
+    .event {        
+        flex-direction: column;
+    }
+    .event-content {        
+        width: 100%;
+    }
+    .event-image {        
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .event-title {
+        /* Reduzir o tamanho da fonte do título do evento */
+        font-size: 24px;
+    }
+
+    .event-subtitle {
+        /* Reduzir o tamanho da fonte do subtítulo do evento */
+        font-size: 18px;
+    }
+
+    .event-text {
+        /* Reduzir o tamanho da fonte do texto do evento */
+        font-size: 16px;
+    }
+}
+
+/* Definir outro breakpoint para telas menores que 480px de largura */
+@media (max-width: 480px) {
+    /* Estilos para a parte do evento em telas menores que 480px */
+    .event-title {
+        /* Reduzir ainda mais o tamanho da fonte do título do evento */
+        font-size: 18px;
+    }
+
+    .event-subtitle {
+        /* Reduzir ainda mais o tamanho da fonte do subtítulo do evento */
+        font-size: 16px;
+    }
+
+    .event-text {
+        /* Reduzir ainda mais o tamanho da fonte do texto do evento */
+        font-size: 14px;
+    }
+
+    .event-image {
+        /* Reduzir a largura da imagem */
+        width: 60%;
+    }
+}

@@ -1,0 +1,22 @@
+.social-icons {
+    display: flex;    
+    justify-content: center;    
+    margin: 20px;
+        
+    
+}
+.social-icons a {    
+    width: 40px;
+    height: 40px;    
+    background-color: blue;    
+    border-radius: 50%;    
+    color: white;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}

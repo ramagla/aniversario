@@ -1,0 +1,201 @@
+@import "_variables";
+@import "./components/buttons";
+@import "./components/infos_bar";
+@import "_hero";
+@import "_event";
+@import "./components/redes_sociais";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Código responsivo baseado no código que você me enviou */
+
+/* Definir os breakpoints para diferentes tamanhos de tela */
+@media (max-width: 1024px) {
+    /* Estilos para telas menores que 1024px de largura */
+    .hero {
+        /* Mudar a direção do flexbox para coluna */
+        flex-direction: column;
+    }
+
+    .hero-image {
+        /* Reduzir a largura da imagem */
+        width: 30%;
+    }
+
+    .hero-content {
+        /* Aumentar a largura do conteúdo */
+        width: 70%;
+    }
+
+    .event {
+        /* Mudar a direção do flexbox para coluna */
+        flex-direction: column;
+    }
+
+    .event-content {
+        /* Aumentar a largura do conteúdo */
+        width: 100%;
+    }
+
+    .event-image {
+        /* Reduzir a largura da imagem */
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {    
+    .hero-title {       
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        /* Reduzir o tamanho da fonte do subtítulo */
+        font-size: 18px;
+    }
+
+    .hero-text {
+        /* Reduzir o tamanho da fonte do texto */
+        font-size: 16px;
+    }
+
+    .countdown-item {
+        /* Reduzir a largura e a altura dos itens da contagem regressiva */
+        width: 80px;
+        height: 80px;
+    }
+
+    .countdown-number {
+        /* Reduzir o tamanho da fonte dos números da contagem regressiva */
+        font-size: 28px;
+    }
+
+    .countdown-label {
+        /* Reduzir o tamanho da fonte dos rótulos da contagem regressiva */
+        font-size: 16px;
+    }
+
+    .button {
+        /* Reduzir o tamanho da fonte e o padding do botão */
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .social-icon {
+        /* Reduzir a largura e a altura dos ícones das redes sociais */
+        width: 40px;
+        height: 40px;
+    }
+
+    .event-title {
+        /* Reduzir o tamanho da fonte do título do evento */
+        font-size: 24px;
+    }
+
+    .event-subtitle {
+        /* Reduzir o tamanho da fonte do subtítulo do evento */
+        font-size: 18px;
+    }
+
+    .event-text {
+        /* Reduzir o tamanho da fonte do texto do evento */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para telas menores que 480px de largura */
+    .container {
+        /* Reduzir o padding do container */
+        padding: 10px;
+    }
+
+    .hero-image {
+        /* Reduzir a largura da imagem */
+        width: 20%;
+    }
+
+    .hero-content {
+        /* Aumentar a largura do conteúdo */
+        width: 80%;
+    }
+
+    .hero-title {
+        /* Reduzir o tamanho da fonte do título */
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        /* Reduzir o tamanho da fonte do subtítulo */
+        font-size: 16px;
+    }
+
+    .hero-text {
+        /* Reduzir o tamanho da fonte do texto */
+        font-size: 14px;
+    }
+
+    .countdown-item {
+        /* Reduzir a largura e a altura dos itens da contagem regressiva */
+        width: 60px;
+        height: 60px;
+    }
+
+    .countdown-number {
+        /* Reduzir o tamanho da fonte dos números da contagem regressiva */
+        font-size: 24px;
+    }
+
+    .countdown-label {
+        /* Reduzir o tamanho da fonte dos rótulos da contagem regressiva */
+        font-size: 14px;
+    }
+
+    .button {
+        /* Reduzir o tamanho da fonte e o padding do botão */
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .social-icon {
+        /* Reduzir a largura e a altura dos ícones das redes sociais */
+        width: 30px;
+        height: 30px;
+    }
+
+    .event-title {
+        /* Reduzir o tamanho da fonte do título do evento */
+        font-size: 18px;
+    }
+
+    .event-subtitle {
+        /* Reduzir o tamanho da fonte do subtítulo do evento */
+        font-size: 16px;
+    }
+
+    .event-text {
+        /* Reduzir o tamanho da fonte do texto do evento */
+        font-size: 14px;
+    }
+
+    .event-image {
+        /* Reduzir a largura da imagem */
+        width: 60%;
+    }
+}
+
